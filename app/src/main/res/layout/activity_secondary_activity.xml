@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Secondary_activity"
+    android:background="#333333"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mlue"
+        android:theme="@style/Theme.EventManager.AppBarOverlay"
+        >
+
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="ADD INFORMATION"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textStyle="bold" />
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="21dp" />
+
+        <EditText
+            android:id="@+id/etCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/txt_boarder"
+            android:ems="10"
+            android:hint="Customers Name"
+            android:inputType="textPersonName"
+            android:paddingVertical="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="#BABABA" />
+
+
+        <Spinner
+            android:id="@+id/spVenue"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:spinnerMode="dialog" />
+
+        <Spinner
+            android:id="@+id/spVenueType"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+
+            android:layout_margin="3dp"
+            android:spinnerMode="dialog" />
+
+
+        <EditText
+            android:id="@+id/etStartDate"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/txt_boarder"
+            android:ems="10"
+            android:hint="Start Date"
+            android:inputType="date"
+            android:paddingVertical="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFBABABA" />
+
+
+        <EditText
+            android:id="@+id/etEndDate"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/txt_boarder"
+            android:ems="10"
+            android:hint="End Date"
+            android:inputType="date"
+            android:paddingVertical="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFBABABA" />
+
+        <EditText
+            android:id="@+id/etStartTime"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/txt_boarder"
+            android:ems="20"
+            android:hint="Start Time"
+            android:textColor="@color/white"
+            android:inputType="time"
+            android:paddingVertical="5dp"
+            android:textColorHint="#FFBABABA"
+            tools:ignore="DuplicateIds" />
+
+        <EditText
+            android:id="@+id/etEndTime"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/txt_boarder"
+            android:ems="20"
+            android:textColor="@color/white"
+            android:hint="End Time"
+            android:inputType="time"
+            android:paddingVertical="5dp"
+            android:textColorHint="#FFBABABA" />
+
+
+        <Spinner
+            android:id="@+id/spFoodItem"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+
+
+            android:layout_margin="3dp"
+            android:spinnerMode="dialog" />
+
+        <EditText
+            android:id="@+id/etTotalGuest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/txt_boarder"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:hint="No. of Guest"
+            android:layout_marginHorizontal="5dp"
+            android:inputType="textPersonName"
+            android:paddingVertical="5dp"
+            android:textColorHint="#FFBABABA" />
+
+
+        <EditText
+            android:id="@+id/etVenueCost"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/txt_boarder"
+            android:focusable="false"
+            android:hint="Venue cost"
+            android:paddingVertical="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFBABABA" />
+
+        <EditText
+            android:id="@+id/etFoodCost"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/txt_boarder"
+            android:focusable="false"
+            android:hint="Food cost"
+            android:paddingVertical="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFBABABA" />
+
+        <EditText
+            android:id="@+id/etTotalCost"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/txt_boarder"
+            android:focusable="false"
+            android:hint="Total cost"
+            android:paddingVertical="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFBABABA" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:background="@color/mlue"
+            android:onClick="displayResult"
+            android:text="ADD"
+            android:textAlignment="gravity"
+            android:textAllCaps="?android:attr/windowOverscan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:cornerRadius="@dimen/appbar_padding"
+            app:iconPadding="@android:dimen/app_icon_size"
+            app:iconSize="50dp"
+            app:iconTint="@color/mlue"
+            app:iconTintMode="multiply"
+            tools:ignore="OnClick"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+</LinearLayout>
